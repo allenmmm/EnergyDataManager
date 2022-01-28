@@ -13,6 +13,9 @@ namespace EnergyDataManager.Domain
         private readonly List<Reading> _Readings = new List<Reading>();
         public IEnumerable<Reading> Reading => _Readings.AsReadOnly();
 
+        public Account(int Id, IEnumerable<Reading> readings)
+        {
 
+        }
     }
 }

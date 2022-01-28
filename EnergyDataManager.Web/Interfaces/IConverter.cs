@@ -7,7 +7,7 @@ namespace EnergyDataManager.Web.Interfaces
 {
     public interface IConverter<TSource, TDestination>
     {
-        abstract List<TDestination> Convert(List<TSource> source_object);
-        abstract List<TSource> Convert(List<TDestination> source_object);
+        abstract TDestination Convert(IEnumerable<TSource> source_object);
+        abstract IEnumerable<TSource> Convert(TDestination source_object);
     }
 }

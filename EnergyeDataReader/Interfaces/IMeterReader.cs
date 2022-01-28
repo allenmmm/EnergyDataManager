@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EnergyDataReader.Interfaces
 {
     public interface IMeterReader
     {
-         List<SourceMeterReading> RetrieveReadingsByAccountId();
-         void LoadReadings(string fileName);
+         IEnumerable<SourceMeterReading> RetrieveReadingsByAccountId();
+         Task<int> LoadReadingsAsync(string fileName);
     }
 }

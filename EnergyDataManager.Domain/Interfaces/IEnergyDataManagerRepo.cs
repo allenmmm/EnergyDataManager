@@ -2,14 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace EnergyDataManager.Domain.Interfaces
 {
     public interface IEnergyDataManagerRepo
     {
-        Account ReadAccountWithMeterReading(int id);
-
-        int UpdateAccountWithMeterReadings(
-            Reading reading);
+        Task<int> UpdateAccountWithMeterReadingsAsync(
+            Account account);
     }
 }

@@ -7,15 +7,13 @@ namespace EnergyDataManager.Domain
 {
     public class Reading
     {
-        public string AccountId { get; set; }
+        public int AccountId { get; set; }
 
-        private readonly List<EnergyDataSample> _EnergyDataSamples = new List<EnergyDataSample>();
-        public IEnumerable<EnergyDataSample> EnergyDataSamples => _EnergyDataSamples.AsReadOnly();
+        public EnergyDataSample energyDataSample  { get; set; }
 
-        public Reading(int id, List<EnergyDataSample> energyDataSamples)
+        public Reading(string dateTime, string meterValue)
         {
 
         }
-
     }
 }
