@@ -111,7 +111,6 @@ D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.test
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.web.tests.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.web.tests.pdb
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.web.tests.genruntimeconfig.cache
-D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.web.tests.csproj.CoreCompileInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Threading.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Validation.dll
@@ -148,3 +147,17 @@ D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.test
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\System.ComponentModel.Annotations.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.web.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.web.tests.csproj.CoreCompileInputs.cache

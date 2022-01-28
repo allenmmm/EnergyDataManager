@@ -5,12 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnergyDataManager.Domain\EnergyDataManager.Domain.csproj" />
-    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DomainServices\" />
+    <ProjectReference Include="..\EnergyDataManager.Domain\EnergyDataManager.Domain.csproj" />
+    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.csproj" />
   </ItemGroup>
 
 

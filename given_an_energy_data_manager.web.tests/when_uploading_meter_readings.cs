@@ -22,81 +22,67 @@ namespace given_an_energy_data_manager.web.tests
 {
     public class when_uploading_meter_readings
     {
-
- 
-
-            public static IEnumerable<object[]> MeterTestData =>
-            new List<object[]>
-            {
-                new object[] {
-                    new Queue<int>(new[]{2,1 }),
-                    new Queue<List<SourceMeterReading>>(new[] {
-                        new List<SourceMeterReading>(){
-                            new SourceMeterReading(){
-                                AccountId = "2344",
-                                MeterReadingDateTime = "22/04/2019  09:24:00",
-                                MeterReadValue = "1002"
-                            },
-                            new SourceMeterReading(){
-                                AccountId = "2344",
-                                MeterReadingDateTime = "24/04/2019  09:26:00",
-                                MeterReadValue = "2002"
-                            }
+        public static IEnumerable<object[]> MeterTestData =>
+        new List<object[]>
+        {
+            new object[] {
+                new Queue<List<SourceMeterReading>>(new[] {
+                    new List<SourceMeterReading>(){
+                        new SourceMeterReading(){
+                            AccountId = "2344",
+                            MeterReadingDateTime = "22/04/2019  09:24:00",
+                            MeterReadValue = "1002"
                         },
-                        new List<SourceMeterReading>(){
-                            new SourceMeterReading(){
-                                AccountId = "8080",
-                                MeterReadingDateTime = "22/04/2019  09:24:00",
-                                MeterReadValue = "1343"
-                            },
-                            new SourceMeterReading(){
-                                AccountId = "8080",
-                                MeterReadingDateTime = "22/05/2019  09:24:00",
-                                MeterReadValue = "2347"
-                            }
-
-
+                        new SourceMeterReading(){
+                            AccountId = "2344",
+                            MeterReadingDateTime = "24/04/2019  09:26:00",
+                            MeterReadValue = "2002"
+                        }
+                    },
+                    new List<SourceMeterReading>(){
+                        new SourceMeterReading(){
+                            AccountId = "8080",
+                            MeterReadingDateTime = "22/04/2019  09:24:00",
+                            MeterReadValue = "1343"
                         },
-                        null
-                    }),
-                    new Queue<Account>( new[] {
-                        new  Account(
-                            2344,
-                            new List<Reading>(){
-                                new Reading("22/04/2019  09:24:00", "1002" ),
-                                new Reading("22/04/2019  09:24:00", "2002" )}),
-                        new Account(
-                            8080,
-                            new List<Reading>(){
-                                new Reading("22/04/2019  09:24:00", "1343" ),
-                            })
+                        new SourceMeterReading(){
+                            AccountId = "8080",
+                            MeterReadingDateTime = "22/05/2019  09:24:00",
+                            MeterReadValue = "2347"
+                        }
 
-                    })
-                }
-            };
+
+                    },
+                    null
+                }),
+                new Queue<Account>( new[] {
+                    new  Account(
+                        2344,
+                        new List<Reading>(){
+                            new Reading("22/04/2019  09:24:00", "1002" ),
+                            new Reading("22/04/2019  09:24:00", "2002" )}),
+                    new Account(
+                        8080,
+                        new List<Reading>(){
+                            new Reading("22/04/2019  09:24:00", "1343" ),
+                        })
+
+                })
+            }
+        };
             
-
         [Theory]
         [MemberData(nameof(MeterTestData))]
         public void then_return_valid_number_of_rows(
-            Queue<int> numberOfRowsPerAccount,
             Queue<List<SourceMeterReading>> sourceMeterReadingsEXP,
             Queue<Account> accountsEXP)
         {
             //ARRANGE
-            string idACT = null;
-            string dateACT = null;
-            string meterACT = null;
-            var idEXP = "1234";
-            var dateEXP = "22/04/2019  09:24:00";
-            var meterEXP = "8080";
             var totalReadingsEXP = 4;
-
             var totalAccountsEXP = 2;
             var fileNameEXP = "Meter_Reading.csv";
             var readingsPerAccount = 2;
             string fileNameACT = null;
-            Account accountACT = null;
 
 
             Mock<IConfiguration> configurationMOCK =
@@ -135,14 +121,11 @@ namespace given_an_energy_data_manager.web.tests
                    It.IsAny<Account>()))
                    .Returns(Task.FromResult(readingsPerAccount));
 
-
-
             var sut = new MeterReadingUploadsController(
                 configurationMOCK.Object,
                 meterReaderMOCK.Object,
                 converterMOCK.Object,
                 edmRepoMOCK.Object);
-
 
             //ACT
             var responseACT = sut.MeterReadingAsync().Result;
@@ -169,5 +152,6 @@ namespace given_an_energy_data_manager.web.tests
             responseObject.Value.Should()
                 .Be($"{readingsPerAccount* totalAccountsEXP}/{totalReadingsEXP} meter readings were uploaded"); 
         }
+
     }
 }
