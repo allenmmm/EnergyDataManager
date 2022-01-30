@@ -4,6 +4,9 @@ D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreap
 D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.csprojAssemblyReference.cache
 D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.AssemblyInfoInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.AssemblyInfo.cs
-D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.csproj.CoreCompileInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.dll
 D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.csproj.CopyComplete
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.csproj.CoreCompileInputs.cache

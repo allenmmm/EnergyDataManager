@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text.Json;
@@ -54,6 +55,13 @@ namespace EnergyDataManager.Web.DomainServices
                 StatusCode = HttpStatusCode.BadRequest;
                 Error = "Application Error";
                 Message = exception.Message;
+            }
+            else if (exContext.Exception is FormatException || 
+                exContext.Exception is IOException)
+            {          
+                StatusCode = HttpStatusCode.InternalServerError;
+                Error = "Internal Server Error";
+                Message = exContext.Exception.Message;
             }
             else
             {   // other types of errors such as Domain Guard clause exceptions

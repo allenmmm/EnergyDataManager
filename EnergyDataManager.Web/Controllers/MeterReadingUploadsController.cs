@@ -5,7 +5,7 @@ using System.Net;
 using System.Threading.Tasks;
 using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.Interfaces;
-using EnergyDataManager.Web.Interfaces;
+using EnergyDataManager.SharedKernel.Interfaces;
 using EnergyDataReader;
 using EnergyDataReader.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -19,47 +19,36 @@ namespace EnergyDataManager.Web.Controllers
     [ApiController]
     public class MeterReadingUploadsController : ControllerBase
     {
-        // GET: api/<MeterReadingUploadsController>
-        private readonly IConfiguration _Configuration;
-        private readonly IMeterReader _MeterReader;
-        private readonly IConverter<SourceMeterReading, Account> _Converter;
+        private readonly IConverterList<Account, SourceMeterReading> _Converter;
         private readonly IEnergyDataManagerRepo _EnergyDataManagerRepo;
-
+        private readonly MeterReadingFile _MeterReadingFile;
 
         public MeterReadingUploadsController(
-            IConfiguration configuration,
-            IMeterReader meterReader,
-            IConverter<SourceMeterReading, Account> converter,
-            IEnergyDataManagerRepo energyDataManagerRepo)
+            IConverterList<Account, SourceMeterReading> converter,
+            IEnergyDataManagerRepo energyDataManagerRepo,
+            MeterReadingFile meterReadingFile)
         {
-            _Configuration = configuration;
-            _MeterReader = meterReader;
             _Converter = converter;
             _EnergyDataManagerRepo = energyDataManagerRepo;
+            _MeterReadingFile = meterReadingFile;
+
         }   
 
         // POST api/<MeterReadingUploadsController>
         [HttpPost]
         public async Task<IActionResult> MeterReadingAsync()
         {
-            IEnumerable<SourceMeterReading> sourceMeterReadings =
-                _MeterReader.RetrieveReadingsByAccountId();
             int numberOfUpdatedReadings = 0;
 
-            var totalLoadedNumberOfReadings =  await _MeterReader
-                .LoadReadingsAsync(_Configuration
-                    .GetValue<string>("MeterReadingFileName"));
-
-            while (sourceMeterReadings != null)
+            foreach( var sourceMeterReadings in _MeterReadingFile.RetrieveReadingsByAccountId())
             {
                 var account = _Converter.Convert(sourceMeterReadings);
                 numberOfUpdatedReadings += await _EnergyDataManagerRepo
                     .UpdateAccountWithMeterReadingsAsync(account);
-                sourceMeterReadings = _MeterReader.RetrieveReadingsByAccountId();
-            } 
+            }
             return StatusCode(
                 (int)HttpStatusCode.Created, 
-                $"{numberOfUpdatedReadings}/{totalLoadedNumberOfReadings} meter readings were uploaded");
+                $"{numberOfUpdatedReadings}/{_MeterReadingFile.Rows} meter readings were uploaded");
         }
     }
 }

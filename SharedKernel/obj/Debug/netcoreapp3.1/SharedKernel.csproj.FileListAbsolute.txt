@@ -1,0 +1,9 @@
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\bin\Debug\netcoreapp3.1\SharedKernel.deps.json
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.csprojAssemblyReference.cache
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.AssemblyInfoInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.AssemblyInfo.cs
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.csproj.CoreCompileInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\SharedKernel\obj\Debug\netcoreapp3.1\SharedKernel.pdb

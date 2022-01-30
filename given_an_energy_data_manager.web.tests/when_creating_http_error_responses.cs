@@ -30,6 +30,10 @@ namespace given_an_energy_data_manager.web.tests
             },
             new object[] {
                 new InvalidProgramException(), HttpStatusCode.InternalServerError
+            },
+            new object[]
+            {
+                new FileNotFoundException(), HttpStatusCode.InternalServerError
             }
         };
 

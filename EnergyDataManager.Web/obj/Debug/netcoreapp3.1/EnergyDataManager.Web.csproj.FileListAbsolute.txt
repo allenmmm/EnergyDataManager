@@ -36,3 +36,7 @@ D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netco
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netcoreapp3.1\EnergyDataManager.Web.csproj.CoreCompileInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netcoreapp3.1\EnergyDataManager.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll

@@ -1,0 +1,3 @@
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.domain.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.domain.tests.csprojAssemblyReference.cache
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.domain.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.domain.tests.AssemblyInfoInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.domain.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.domain.tests.AssemblyInfo.cs
