@@ -26,7 +26,7 @@ namespace given_an_energy_data_manager.domain.tests
             var sut = new Account(2);
 
             //ACT
-            sut.UpdateReading(newReadingsEXP);
+            sut.UpdateReadings(newReadingsEXP);
 
             //ASSERT
             sut.Readings.Count().Should().Be(newReadingsEXP.Count);
@@ -87,7 +87,7 @@ namespace given_an_energy_data_manager.domain.tests
             var sut = new Account(2, existingReadings);
 
             //ACT
-            sut.UpdateReading(newReadings);
+            sut.UpdateReadings(newReadings);
 
             //ASSERT
             sut.Readings.Count().Should().Be(5);

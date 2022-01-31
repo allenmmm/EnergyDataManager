@@ -6,8 +6,12 @@ using System.Text;
 namespace EnergyDataManager.Domain.ValueObjects
 {
     public class MeterReading_VO : ValueObject<MeterReading_VO> { 
-        public DateTime DateOfReading { get; private set; }
-        public  int Reading { get; private set; }
+        public DateTime Date { get; private set; }
+        public  int Value { get; private set; }
+
+        private  MeterReading_VO()
+        {
+        }
 
         public MeterReading_VO(string dateOfReading, string meterValue)
         {
@@ -26,27 +30,27 @@ namespace EnergyDataManager.Domain.ValueObjects
                 int.Parse(timeArray[1]),
                 int.Parse(timeArray[2]));
 
-            DateOfReading = Guard.AgainstInvalidDateTime(dateOfReading, "Date of reading is not a valid a data type"); 
+            Date = Guard.AgainstInvalidDateTime(dateOfReading, "Date of reading is not a valid a data type"); 
             Guard.AgainstFalse(int.TryParse(meterValue, out reading), "Meter value is not a valid data type");
             reading = Guard.AgainstLessThan(0,int.Parse(meterValue), "Meter value is not a valid data type");
             Guard.AgainstNotEqual(meterValue.ToString().Length,4, "Meter value must be an int of 4 digits");
-            Reading = reading;
+            Value = reading;
         }
 
         public static bool operator > (MeterReading_VO x, MeterReading_VO y)
         {
-            if (x.DateOfReading > y.DateOfReading)
+            if (x.Date > y.Date)
                 return true;
-            if (x.DateOfReading == y.DateOfReading && x.Reading > y.Reading)
+            if (x.Date == y.Date && x.Value > y.Value)
                 return true;
             return false;
         }
 
         public static bool operator < (MeterReading_VO x, MeterReading_VO y)
         {
-            if (x.DateOfReading < y.DateOfReading)
+            if (x.Date < y.Date)
                 return true;
-            if (x.DateOfReading == y.DateOfReading && x.Reading < y.Reading)
+            if (x.Date == y.Date && x.Value < y.Value)
                 return true;
             return false;
         }

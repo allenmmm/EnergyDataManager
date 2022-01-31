@@ -7,11 +7,13 @@ using System.Text;
 
 namespace EnergyDataManager.Domain
 {
-    public class Reading
+    public class Reading : Entity<int>
     {
-        public int AccountId { get; private set; }
 
         public MeterReading_VO MeterReading { get; private set; }
+        public int AccountId { get; private set; }
+
+        private Reading() { }
 
         public Reading(MeterReading_VO meterReading)
         {

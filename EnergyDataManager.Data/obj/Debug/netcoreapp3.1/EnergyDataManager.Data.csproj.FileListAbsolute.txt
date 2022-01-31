@@ -1,0 +1,16 @@
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataManager.Data.deps.json
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataManager.Data.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataManager.Data.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.csprojAssemblyReference.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.AssemblyInfoInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.AssemblyInfo.cs
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataManager.Domain.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataReader.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataManager.Domain.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\EnergyDataReader.File.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.csproj.CopyComplete
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Data\obj\Debug\netcoreapp3.1\EnergyDataManager.Data.csproj.CoreCompileInputs.cache

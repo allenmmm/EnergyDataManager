@@ -8,15 +8,12 @@ using System.Linq;
 
 namespace EnergyDataManager.Domain
 {
-    public class Account 
+    public class Account : Entity<int>
     {
-        public int Id { get; set; }
-        public string LastName { get; set; }
-        public string Surname { get; set; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
         private  List<Reading> _Readings = new List<Reading>();
         public IEnumerable<Reading> Readings => _Readings.AsReadOnly();
-
-
 
         public Account(int id, List<Reading> readings = null)
         {
@@ -24,7 +21,9 @@ namespace EnergyDataManager.Domain
             _Readings = readings ?? new List<Reading>(); 
         }
 
-        public void UpdateReading(List<Reading> readings)
+        private Account() { }
+
+        public void UpdateReadings(IEnumerable<Reading> readings)
         {
             //find latest reading in existing
             var latestExistingReading = _Readings.FirstOrDefault();
@@ -49,7 +48,6 @@ namespace EnergyDataManager.Domain
                     );
             }
         }
-
 
         public static Account Create(
             IEnumerable<SourceMeterReading> sourceMeterReadings)

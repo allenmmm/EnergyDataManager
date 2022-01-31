@@ -270,8 +270,8 @@ namespace given_an_energy_data_manager.web.tests
                 .Be(sourceMeterReading.Count());
 
            var firstReading = accountACT.Readings.ElementAt(0).MeterReading;
-           firstReading.DateOfReading.Should().Be(dateTimeEXP);
-           firstReading.Reading.Should().Be(readingEXP);
+           firstReading.Date.Should().Be(dateTimeEXP);
+           firstReading.Value.Should().Be(readingEXP);
         
         }
 

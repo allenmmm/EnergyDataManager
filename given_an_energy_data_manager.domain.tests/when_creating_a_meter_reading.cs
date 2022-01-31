@@ -22,8 +22,8 @@ namespace given_an_energy_data_manager.domain.tests
                 dateTimeStringEXP,
                 meterValueEXP.ToString());
             //ASSERT
-            sut.DateOfReading.Should().Be(dateTimeEXP);
-            sut.Reading.Should().Be(meterValueEXP);
+            sut.Date.Should().Be(dateTimeEXP);
+            sut.Value.Should().Be(meterValueEXP);
         }
 
         [Theory]
@@ -80,8 +80,8 @@ namespace given_an_energy_data_manager.domain.tests
                 dateTimeStringEXP,
                 meterValueEXP.ToString());
             //ASSERT
-            sut.MeterReading.DateOfReading.Should().Be(dateTimeEXP);
-            sut.MeterReading.Reading.Should().Be(meterValueEXP);
+            sut.MeterReading.Date.Should().Be(dateTimeEXP);
+            sut.MeterReading.Value.Should().Be(meterValueEXP);
         }
 
         [Theory]
