@@ -3,7 +3,7 @@ using EnergyDataManager.Domain.Interfaces;
 using EnergyDataManager.Domain.ValueObjects;
 using EnergyDataManager.Web.Controllers;
 using EnergyDataReader;
-using EnergyDataReader.Interfaces;
+
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -21,6 +21,9 @@ using EnergyDataManager.SharedKernel.Interfaces;
 using EnergyDataManager.SharedKernel.interfaces;
 using Moq.Protected;
 using SharedKernel.Interfaces;
+using EnergyDataReader.File;
+using EnergyDataReader.File.Interfaces;
+using EnergyDataManager.Web.DomainServices;
 
 namespace given_an_energy_data_manager.web.tests
 {
@@ -52,28 +55,26 @@ namespace given_an_energy_data_manager.web.tests
              };
         }
 
-    
         public static IEnumerable<object[]> MeterReadingTestData =>
             new List<object[]>
             {
                 new object[] {
                     new List<List<SourceMeterReading>>(){
                         new List<SourceMeterReading>(){
-                             new SourceMeterReading(
+                                new SourceMeterReading(
                                     "2344", "22/04/2019  09:24:00", "1002"),
-                             new SourceMeterReading(
+                                new SourceMeterReading(
                                     "2344","24/04/2019  09:26:00", "2002")
                         }
                     },
                     new  Account(
-                    2344,
-                    new List<Reading>(){
-                        new Reading("22/04/2019  09:24:00", "1002" ),
-                        new Reading("22/04/2019  09:24:00", "2002" )
-                    })
+                        2344,
+                        new List<Reading>(){
+                            Reading.Create("22/04/2019  09:24:00", "1002" ),
+
+                        })
                 }
             };
-
 
         [Theory]
         [MemberData(nameof(MeterReadingTestData))]
@@ -230,7 +231,7 @@ namespace given_an_energy_data_manager.web.tests
         }
 
         [Fact]
-        public void then_convert_source_meter_reading_into_meter_reading()
+        public void then_convert_string_meter_reading_into_source_meter_reading()
         {
             //ARRAGE
             var inputLine = "2344,22/04/2019 09:24,1002";
@@ -244,6 +245,34 @@ namespace given_an_energy_data_manager.web.tests
             meterReadingACT.AccountId.Should().Be(inputLineEXP[0]);
             meterReadingACT.MeterReadingDateTime.Should().Be(inputLineEXP[1]);
             meterReadingACT.MeterReadValue.Should().Be(inputLineEXP[2]);
+        }
+
+        [Fact]
+        public void then_convert_source_meter_reading_into_account()
+        {
+            //ARRANGE
+            var readingEXP = 1002;
+            var sourceMeterReading = new List<SourceMeterReading>(){
+                new SourceMeterReading(
+                    "2344", "22/04/2019  09:24:00", readingEXP.ToString())
+            };
+            var dateTimeEXP = new DateTime(2019, 04, 22, 9, 24, 0);
+
+            var sut = new AccountConverter();
+
+            //ACT
+            var accountACT = sut.Convert(sourceMeterReading);
+
+            //ASSERT
+            accountACT.Id.ToString().Should()
+                .Be(_SourceMeterReading.First().AccountId);
+            accountACT.Readings.Count().Should()
+                .Be(sourceMeterReading.Count());
+
+           var firstReading = accountACT.Readings.ElementAt(0).MeterReading;
+           firstReading.DateOfReading.Should().Be(dateTimeEXP);
+           firstReading.Reading.Should().Be(readingEXP);
+        
         }
 
 
@@ -260,7 +289,6 @@ namespace given_an_energy_data_manager.web.tests
 
             //ASSERT
             act.Should().ThrowExactly<FormatException>();
-
         }
     }
 }

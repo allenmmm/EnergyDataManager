@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wHVEb8GAc8ZyTzYA+goXl0DbPJCCfg+A63o99k59H0MJzBSLjbj9d93bKseYETCZbCn6RzjyUPcmLStK46GVyQ==",
+  "dgSpecHash": "0mjho4Y6oQN/6N7rCTtSuzxwerDAiYj8PahyU7Uab0ZBEKWmPqRKtil15qsAm7LKenXA9a3znf5rXkAI3s20jA==",
   "success": true,
-  "projectFilePath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj",
+  "projectFilePath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\allenm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\allenm\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",

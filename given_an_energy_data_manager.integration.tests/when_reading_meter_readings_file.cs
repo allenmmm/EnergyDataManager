@@ -1,4 +1,5 @@
 using EnergyDataReader;
+using EnergyDataReader.File;
 using FluentAssertions;
 using System;
 using System.Collections.Generic;

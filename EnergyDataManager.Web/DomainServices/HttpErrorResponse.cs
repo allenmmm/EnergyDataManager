@@ -50,7 +50,7 @@ namespace EnergyDataManager.Web.DomainServices
                 Message = "Unexpected database error, operation not performed";
             }
             else if (exContext.Exception is ArgumentException)
-            {   // custom application errors such as 404 not found 
+            {   
                 var exception = (ArgumentException)exContext.Exception;
                 StatusCode = HttpStatusCode.BadRequest;
                 Error = "Application Error";

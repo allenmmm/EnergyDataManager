@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EnergyDataManager.Domain\EnergyDataManager.Domain.csproj" />
-    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.csproj" />
+    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.File.csproj" />
   </ItemGroup>
 
   <ItemGroup>

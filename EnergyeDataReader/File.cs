@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace EnergyDataReader
+namespace EnergyDataReader.File
 {
     public abstract class File<TDestination,TSource>
     {

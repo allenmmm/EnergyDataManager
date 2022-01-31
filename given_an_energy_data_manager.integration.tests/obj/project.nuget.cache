@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "HVMM4Z4SzqIjI2fnpssRGxgg3ec61YBU8x3yrDikE2cJ2ts9PsaQmd4+tQlOaypONIS68EmfaHUgVOObqv0KxQ==",
+  "dgSpecHash": "52KIeUKWlGmPRsR8FQLJomcCFJ6oXngy/dMRjIFNCgl18ZSvp/YvNVC5r8Z8CLCIMX+h2euaxbLYAsTyxZiBeg==",
   "success": true,
   "projectFilePath": "D:\\Opportunities\\Restore\\EnergyDataManager\\given_an_energy_data_manager.integration.tests\\given_an_energy_data_manager.integration.tests.csproj",
   "expectedPackageFiles": [

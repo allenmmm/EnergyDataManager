@@ -195,6 +195,9 @@
       "EnergyDataManager.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "EnergyDataReader.File": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/EnergyDataManager.Domain.dll": {}
         },
@@ -202,7 +205,7 @@
           "bin/placeholder/EnergyDataManager.Domain.dll": {}
         }
       },
-      "EnergyDataReader/1.0.0": {
+      "EnergyDataReader.File/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -210,10 +213,10 @@
           "SharedKernel": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/EnergyDataReader.dll": {}
+          "bin/placeholder/EnergyDataReader.File.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EnergyDataReader.dll": {}
+          "bin/placeholder/EnergyDataReader.File.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -637,10 +640,10 @@
       "path": "../EnergyDataManager.Domain/EnergyDataManager.Domain.csproj",
       "msbuildProject": "../EnergyDataManager.Domain/EnergyDataManager.Domain.csproj"
     },
-    "EnergyDataReader/1.0.0": {
+    "EnergyDataReader.File/1.0.0": {
       "type": "project",
-      "path": "../EnergyeDataReader/EnergyDataReader.csproj",
-      "msbuildProject": "../EnergyeDataReader/EnergyDataReader.csproj"
+      "path": "../EnergyeDataReader/EnergyDataReader.File.csproj",
+      "msbuildProject": "../EnergyeDataReader/EnergyDataReader.File.csproj"
     },
     "SharedKernel/1.0.0": {
       "type": "project",
@@ -651,7 +654,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "EnergyDataManager.Domain >= 1.0.0",
-      "EnergyDataReader >= 1.0.0",
+      "EnergyDataReader.File >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.12"
     ]
   },
@@ -688,8 +691,8 @@
             "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj": {
               "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj"
             },
-            "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj": {
-              "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj"
+            "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj": {
+              "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj"
             }
           }
         }

@@ -25,7 +25,7 @@
       "EnergyDataManager.Web/1.0.0": {
         "dependencies": {
           "EnergyDataManager.Domain": "1.0.0",
-          "EnergyDataReader": "1.0.0",
+          "EnergyDataReader.File": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -511,6 +511,9 @@
         }
       },
       "EnergyDataManager.Domain/1.0.0": {
+        "dependencies": {
+          "EnergyDataReader.File": "1.0.0"
+        },
         "runtime": {
           "EnergyDataManager.Domain.dll": {}
         },
@@ -518,16 +521,16 @@
           "EnergyDataManager.Domain.dll": {}
         }
       },
-      "EnergyDataReader/1.0.0": {
+      "EnergyDataReader.File/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "SharedKernel": "1.0.0"
         },
         "runtime": {
-          "EnergyDataReader.dll": {}
+          "EnergyDataReader.File.dll": {}
         },
         "compile": {
-          "EnergyDataReader.dll": {}
+          "EnergyDataReader.File.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -2277,7 +2280,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EnergyDataReader/1.0.0": {
+    "EnergyDataReader.File/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnergyDataReader.Interfaces
+namespace EnergyDataReader.File.Interfaces
 {
     public interface IExtractMeterReadings
     {

@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace EnergyDataReader
+namespace EnergyDataReader.File
 {
     public class MeterReadingConverter : IConverter<SourceMeterReading, string>
     {

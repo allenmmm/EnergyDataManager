@@ -142,9 +142,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj",
-      "projectName": "EnergyDataReader",
-      "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj",
+      "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
+      "projectName": "EnergyDataReader.File",
+      "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
       "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
       "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\obj\\",
       "projectStyle": "PackageReference",

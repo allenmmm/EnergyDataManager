@@ -17,9 +17,7 @@ D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netco
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netcoreapp3.1\EnergyDataManager.Web.pdb
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netcoreapp3.1\EnergyDataManager.Web.genruntimeconfig.cache
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataManager.Domain.dll
-D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataReader.dll
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataManager.Domain.pdb
-D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataReader.pdb
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\obj\Debug\netcoreapp3.1\EnergyDataManager.Web.csproj.CopyComplete
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -40,3 +38,5 @@ D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netco
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\SharedKernel.pdb
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataReader.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataManager.Web\bin\Debug\netcoreapp3.1\EnergyDataReader.File.pdb

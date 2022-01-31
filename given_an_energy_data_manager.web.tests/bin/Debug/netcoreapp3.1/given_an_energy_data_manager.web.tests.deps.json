@@ -10,7 +10,7 @@
         "dependencies": {
           "EnergyDataManager.Domain": "1.0.0",
           "EnergyDataManager.Web": "1.0.0",
-          "EnergyDataReader": "1.0.0",
+          "EnergyDataReader.File": "1.0.0",
           "FluentAssertions": "6.4.0",
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.NET.Test.Sdk": "16.9.4",
@@ -1567,6 +1567,9 @@
       },
       "xunit.runner.visualstudio/2.4.3": {},
       "EnergyDataManager.Domain/1.0.0": {
+        "dependencies": {
+          "EnergyDataReader.File": "1.0.0"
+        },
         "runtime": {
           "EnergyDataManager.Domain.dll": {}
         }
@@ -1574,20 +1577,20 @@
       "EnergyDataManager.Web/1.0.0": {
         "dependencies": {
           "EnergyDataManager.Domain": "1.0.0",
-          "EnergyDataReader": "1.0.0",
+          "EnergyDataReader.File": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.12"
         },
         "runtime": {
           "EnergyDataManager.Web.dll": {}
         }
       },
-      "EnergyDataReader/1.0.0": {
+      "EnergyDataReader.File/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "SharedKernel": "1.0.0"
         },
         "runtime": {
-          "EnergyDataReader.dll": {}
+          "EnergyDataReader.File.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -2495,7 +2498,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EnergyDataReader/1.0.0": {
+    "EnergyDataReader.File/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

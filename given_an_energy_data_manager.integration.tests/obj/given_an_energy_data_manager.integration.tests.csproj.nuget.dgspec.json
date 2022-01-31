@@ -4,12 +4,12 @@
     "D:\\Opportunities\\Restore\\EnergyDataManager\\given_an_energy_data_manager.integration.tests\\given_an_energy_data_manager.integration.tests.csproj": {}
   },
   "projects": {
-    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj": {
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj",
-        "projectName": "EnergyDataReader",
-        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj",
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
+        "projectName": "EnergyDataReader.File",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
         "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
         "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\obj\\",
         "projectStyle": "PackageReference",
@@ -95,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj": {
-                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.csproj"
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj"
               }
             }
           }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.Interfaces;
 using EnergyDataManager.SharedKernel.Interfaces;
-using EnergyDataReader;
-using EnergyDataReader.Interfaces;
+using EnergyDataReader.File;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 

@@ -1,7 +1,5 @@
 ﻿using EnergyDataManager.SharedKernel;
 using EnergyDataManager.SharedKernel.interfaces;
-using EnergyDataManager.SharedKernel.Interfaces;
-using EnergyDataReader.Interfaces;
 using SharedKernel.Interfaces;
 using System;
 using System.Collections;
@@ -9,8 +7,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+
+using EnergyDataReader.File.Interfaces;
 using Microsoft.Extensions.Configuration;
-namespace EnergyDataReader
+
+namespace EnergyDataReader.File
 {
     public class MeterReadingFile : File<SourceMeterReading,string>, IExtractMeterReadings
     {

@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace EnergyDataReader
+namespace EnergyDataReader.File
 {
     public class MeterReadingFileService : IFileReadService<SourceMeterReading,string>
     {
@@ -18,7 +18,7 @@ namespace EnergyDataReader
             try
             {
                 return (IEnumerable<SourceMeterReading>)
-                    File.ReadAllLines(fileName)
+                    System.IO.File.ReadAllLines(fileName)
                         .Skip(1)
                         .Select(v => converter.Convert(v))
                         .ToList();

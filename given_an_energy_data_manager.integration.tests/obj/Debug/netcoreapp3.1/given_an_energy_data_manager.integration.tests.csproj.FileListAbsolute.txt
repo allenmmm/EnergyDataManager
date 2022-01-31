@@ -91,9 +91,7 @@ D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integrat
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\EnergyDataReader.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\SharedKernel.dll
-D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\EnergyDataReader.pdb
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\SharedKernel.pdb
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.integration.tests.AssemblyInfoInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.integration.tests.AssemblyInfo.cs
@@ -108,3 +106,5 @@ D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integrat
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.integration.tests.csproj.CoreCompileInputs.cache
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.integration.tests.dll
 D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\obj\Debug\netcoreapp3.1\given_an_energy_data_manager.integration.tests.pdb
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\EnergyDataReader.File.dll
+D:\Opportunities\Restore\EnergyDataManager\given_an_energy_data_manager.integration.tests\bin\Debug\netcoreapp3.1\EnergyDataReader.File.pdb
