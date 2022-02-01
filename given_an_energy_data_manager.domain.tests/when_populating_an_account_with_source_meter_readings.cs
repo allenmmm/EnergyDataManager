@@ -3,7 +3,6 @@ using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.ValueObjects;
 using EnergyDataReader.File;
 using FluentAssertions;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using Xunit;
@@ -12,14 +11,6 @@ namespace given_an_energy_data_manager.domain.tests
 {
     public class when_populating_an_account_with_source_meter_readings
     {
-
-
-        public when_populating_an_account_with_source_meter_readings()
-        {
-
-        }
-
-
         [Theory]
         [InlineData(null)]
         [InlineData("chew")]
@@ -45,30 +36,30 @@ namespace given_an_energy_data_manager.domain.tests
                 new object[] {
                     new List<SourceMeterReading>(){
                          new SourceMeterReading(
-                            "2344", "22/04/2019  09:24:00", "1002") 
+                            "2344", "22/04/2019 09:24:00", "10024") 
                     },
                     1
                 },
                 new object[] {
                      new List<SourceMeterReading>(){
                     new SourceMeterReading(
-                        "2344","24/04/2019  09:26:00", null) 
+                        "2344","24/04/2019 09:26:00", null) 
                      },
                     0
                 },
                 new object[]{
                      new List<SourceMeterReading>(){
                          new SourceMeterReading(
-                             "2344", "07/05/2019  09:24:00", "8888"),
+                             "2344", "07/05/2019 09:24:00", "88888"),
                          new SourceMeterReading(
-                             "2344", "07/05/2019  09:24:00", "8888")
+                             "2344", "07/05/2019 09:24:00", "88888")
                      },
                     2
                 },
                 new object[]{
                      new List<SourceMeterReading>(){
                          new SourceMeterReading(
-                            "2344","18/05/2019  09:24:00", "11154") ,
+                            "2344","18/05/2019 09:24:00", "11154") ,
                          new SourceMeterReading(
                             "2344","18/05/2019  09:24:00", "1115")
                      },
@@ -98,12 +89,12 @@ namespace given_an_energy_data_manager.domain.tests
             //ARRANGE
             var readings = new List<SourceMeterReading>(){
                 new SourceMeterReading(
-                    "2344", "22/04/2019  09:24:00", "1002")
+                    "2344", "22/04/2019 09:24:00", "11002")
             };
 
             var readingEXP = new MeterReading_VO(
-                 "22/04/2019  09:24:00",
-                 "1002");
+                 "22/04/2019 09:24:00",
+                 "11002");
 
             //ACT
             var accountACT = Account.Create(readings);

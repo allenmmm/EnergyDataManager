@@ -23,7 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EnergyDataManager.Domain\EnergyDataManager.Domain.csproj" />
-    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.File.csproj" />
+    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.SourceMeterReading.File.csproj" />
   </ItemGroup>
 
 </Project>

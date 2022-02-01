@@ -2739,6 +2739,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "EnergyDataManager.Domain": "1.0.0",
+          "EnergyDataReader.Account.File": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12"
         },
@@ -2753,7 +2754,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
-          "EnergyDataReader.File": "1.0.0"
+          "EnergyDataReader.Account.File": "1.0.0",
+          "EnergyDataReader.SourceMeterReading.File": "1.0.0"
         },
         "compile": {
           "bin/placeholder/EnergyDataManager.Domain.dll": {}
@@ -2762,7 +2764,7 @@
           "bin/placeholder/EnergyDataManager.Domain.dll": {}
         }
       },
-      "EnergyDataReader.File/1.0.0": {
+      "EnergyDataReader.Account.File/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -2770,10 +2772,24 @@
           "SharedKernel": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/EnergyDataReader.File.dll": {}
+          "bin/placeholder/EnergyDataReader.Account.File.dll": {}
         },
         "runtime": {
-          "bin/placeholder/EnergyDataReader.File.dll": {}
+          "bin/placeholder/EnergyDataReader.Account.File.dll": {}
+        }
+      },
+      "EnergyDataReader.SourceMeterReading.File/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "SharedKernel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/EnergyDataReader.SourceMeterReading.File.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EnergyDataReader.SourceMeterReading.File.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -8966,10 +8982,15 @@
       "path": "../EnergyDataManager.Domain/EnergyDataManager.Domain.csproj",
       "msbuildProject": "../EnergyDataManager.Domain/EnergyDataManager.Domain.csproj"
     },
-    "EnergyDataReader.File/1.0.0": {
+    "EnergyDataReader.Account.File/1.0.0": {
       "type": "project",
-      "path": "../EnergyeDataReader/EnergyDataReader.File.csproj",
-      "msbuildProject": "../EnergyeDataReader/EnergyDataReader.File.csproj"
+      "path": "../EnergyDataRead.Account.File/EnergyDataReader.Account.File.csproj",
+      "msbuildProject": "../EnergyDataRead.Account.File/EnergyDataReader.Account.File.csproj"
+    },
+    "EnergyDataReader.SourceMeterReading.File/1.0.0": {
+      "type": "project",
+      "path": "../EnergyeDataReader/EnergyDataReader.SourceMeterReading.File.csproj",
+      "msbuildProject": "../EnergyeDataReader/EnergyDataReader.SourceMeterReading.File.csproj"
     },
     "SharedKernel/1.0.0": {
       "type": "project",
@@ -8986,6 +9007,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.12",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "Moq >= 4.16.1",
+      "System.Collections >= 4.3.0",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
@@ -9059,6 +9081,10 @@
           "Moq": {
             "target": "Package",
             "version": "[4.16.1, )"
+          },
+          "System.Collections": {
+            "target": "Package",
+            "version": "[4.3.0, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

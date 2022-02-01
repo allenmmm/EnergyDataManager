@@ -42,9 +42,11 @@ namespace SharedKernel
 
         public static DateTime AgainstInvalidDateTime(string value, string message)
         {
-            var dateTimeArray = value.Split("  ");
+            var dateTimeArray = value.Split(" ");
             var dateArray = dateTimeArray[0].Split("/");
             var timeArray = dateTimeArray[1].Split(":");
+            int seconds = timeArray.Length < 3 ? 0
+                : int.Parse(timeArray[2]);
             try
             {
                 return (new DateTime(
@@ -53,7 +55,7 @@ namespace SharedKernel
                     int.Parse(dateArray[0]),
                     int.Parse(timeArray[0]),
                     int.Parse(timeArray[1]),
-                    int.Parse(timeArray[2])));
+                    seconds));
 
             }
             catch(Exception ex)

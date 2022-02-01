@@ -1,9 +1,7 @@
 ﻿using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Data.Common;
-using System.Text;
 
 namespace given_an_energy_data_manager.data.tests
 {

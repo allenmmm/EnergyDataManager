@@ -1,6 +1,4 @@
-﻿using EnergyDataManager.Domain.ValueObjects;
-using EnergyDataReader.File;
-using EnergyDataManager.Domain;
+﻿using EnergyDataReader.File;
 using SharedKernel;
 using System;
 using System.Collections.Generic;
@@ -21,13 +19,26 @@ namespace EnergyDataManager.Domain
             _Readings = readings ?? new List<Reading>(); 
         }
 
+        //write tests for this
+        public Account( EnergyDataReader.Account.File.Account account )
+        {
+            int id;
+            Guard.AgainstNull(account.AccountId, "Account Id must be valid");
+            Guard.AgainstFalse(
+                int.TryParse(account.AccountId, out id),
+                "Source meter readings have invalid account id");
+
+            Id = id;
+            FirstName = account.FirstName;
+            LastName = account.LastName;
+        }
+
         private Account() { }
 
         public void UpdateReadings(IEnumerable<Reading> readings)
         {
-            //find latest reading in existing
             var latestExistingReading = _Readings.FirstOrDefault();
-            if (latestExistingReading == null)
+            if (latestExistingReading == null) //No readings so add them all
             {
                 _Readings = readings.Select(r => 
                     new Reading(r.MeterReading)).ToList();
@@ -42,12 +53,13 @@ namespace EnergyDataManager.Domain
 
                 var readingsToAdd = readings.Where(r =>
                     r.MeterReading > latestExistingReading.MeterReading);
+
                 _Readings.AddRange(
                      readingsToAdd.Select(r =>
-                        new Reading(r.MeterReading)).ToList()
-                    );
+                        new Reading(r.MeterReading)).ToList());
             }
         }
+
 
         public static Account Create(
             IEnumerable<SourceMeterReading> sourceMeterReadings)
@@ -86,8 +98,5 @@ namespace EnergyDataManager.Domain
                 return null;
             }
         }
-
-
     }
-
 }

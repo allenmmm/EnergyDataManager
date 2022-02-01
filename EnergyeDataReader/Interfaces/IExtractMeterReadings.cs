@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace EnergyDataReader.File.Interfaces
 {
     public interface IExtractMeterReadings
     {
-        //  int TotalNumberOfProperties { get; }
-
-        IEnumerable< IEnumerable<SourceMeterReading>> RetrieveReadingsByAccountId();
-    //     Task<int> LoadReadingsAsync(string fileName);
-         
+        IEnumerable< IEnumerable<SourceMeterReading>> RetrieveReadingsByAccountId();     
     }
 }

@@ -9,7 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using System.Text;
 using System.Text.Json;
 using Xunit;
 
@@ -101,8 +100,6 @@ namespace given_an_energy_data_manager.web.tests
         public void handle_exception_event(
                Exception exceptionEXP,
                HttpStatusCode statusCodeEXP)
-
-
         {
             //ARRANGE
             _ActionContext.HttpContext.Response.Body = new MemoryStream();

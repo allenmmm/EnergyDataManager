@@ -1,14 +1,11 @@
 ﻿using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace EnergyDataManager.Data
 {
-    public class EDMRepo : IEnergyDataManagerRepo
+    public class EDMRepo : IEDMRepo
     {
         private readonly EDMContext _Context;
 

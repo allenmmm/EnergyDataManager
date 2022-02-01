@@ -11,6 +11,14 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EnergyDataManager.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data", "EnergyDataManager.Data.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EnergyDataManager.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain", "EnergyDataManager.Domain.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EnergyDataManager.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web", "EnergyDataManager.Web.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EnergyDataReader.Account.File, Version=1.0.0.0, Culture=neutral, PublicKeyToken=n" +
+    "ull", "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File", "EnergyDataReader.Account.File.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EnergyDataReader.SourceMeterReading.File, Version=1.0.0.0, Culture=neutral, Publi" +
+    "cKeyToken=null", "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader", "EnergyDataReader.SourceMeterReading.File.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("SharedKernel, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Opportunities\\Restore\\EnergyDataManager\\SharedKernel", "SharedKernel.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("given_an_energy_data_manager.integration.tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

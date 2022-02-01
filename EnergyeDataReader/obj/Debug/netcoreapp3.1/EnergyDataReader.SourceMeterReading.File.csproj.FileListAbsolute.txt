@@ -1,0 +1,12 @@
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.deps.json
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.csprojAssemblyReference.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.AssemblyInfoInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.AssemblyInfo.cs
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.csproj.CopyComplete
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyeDataReader\obj\Debug\netcoreapp3.1\EnergyDataReader.SourceMeterReading.File.csproj.CoreCompileInputs.cache

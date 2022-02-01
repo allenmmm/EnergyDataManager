@@ -6,15 +6,26 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EnergyDataManager.Data\EnergyDataManager.Data.csproj" />
     <ProjectReference Include="..\EnergyDataManager.Domain\EnergyDataManager.Domain.csproj" />
-    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.File.csproj" />
+    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.SourceMeterReading.File.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interfaces\" />
+    <None Update="SeedingData\Meter_Reading.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="SeedingData\Test_Accounts.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 

@@ -5,7 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.File.csproj" />
+    <ProjectReference Include="..\EnergyDataRead.Account.File\EnergyDataReader.Account.File.csproj" />
+    <ProjectReference Include="..\EnergyeDataReader\EnergyDataReader.SourceMeterReading.File.csproj" />
   </ItemGroup>
 
 </Project>

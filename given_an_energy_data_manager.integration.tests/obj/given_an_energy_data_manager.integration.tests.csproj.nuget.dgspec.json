@@ -4,12 +4,301 @@
     "D:\\Opportunities\\Restore\\EnergyDataManager\\given_an_energy_data_manager.integration.tests\\given_an_energy_data_manager.integration.tests.csproj": {}
   },
   "projects": {
-    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj": {
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
-        "projectName": "EnergyDataReader.File",
-        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj",
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj",
+        "projectName": "EnergyDataManager.Data",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj",
+        "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
+        "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\allenm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj",
+        "projectName": "EnergyDataManager.Domain",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj",
+        "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
+        "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\allenm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\EnergyDataManager.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\EnergyDataManager.Web.csproj",
+        "projectName": "EnergyDataManager.Web",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\EnergyDataManager.Web.csproj",
+        "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
+        "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\allenm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Domain\\EnergyDataManager.Domain.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj",
+        "projectName": "EnergyDataReader.Account.File",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj",
+        "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
+        "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\allenm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\SharedKernel\\SharedKernel.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\SharedKernel\\SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.408\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj",
+        "projectName": "EnergyDataReader.SourceMeterReading.File",
+        "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj",
         "packagesPath": "C:\\Users\\allenm\\.nuget\\packages\\",
         "outputPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\obj\\",
         "projectStyle": "PackageReference",
@@ -95,8 +384,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj": {
-                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.File.csproj"
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Data\\EnergyDataManager.Data.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\EnergyDataManager.Web.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataManager.Web\\EnergyDataManager.Web.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyDataRead.Account.File\\EnergyDataReader.Account.File.csproj"
+              },
+              "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj": {
+                "projectPath": "D:\\Opportunities\\Restore\\EnergyDataManager\\EnergyeDataReader\\EnergyDataReader.SourceMeterReading.File.csproj"
               }
             }
           }
@@ -114,9 +412,29 @@
               "target": "Package",
               "version": "[6.4.0, )"
             },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[3.1.21, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -146,6 +464,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

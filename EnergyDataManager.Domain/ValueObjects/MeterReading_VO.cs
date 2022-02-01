@@ -1,7 +1,5 @@
 ﻿using SharedKernel;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EnergyDataManager.Domain.ValueObjects
 {
@@ -18,22 +16,14 @@ namespace EnergyDataManager.Domain.ValueObjects
             Guard.AgainstNull(dateOfReading, "Date of reading is not a valid data type");
             Guard.AgainstNull(meterValue, "Meter value is not a valid a data type");
             int reading;
-            var dateTimeArray = dateOfReading.Split("  ");
+            var dateTimeArray = dateOfReading.Split(" ");
             var dateArray = dateTimeArray[0].Split("/");
             var timeArray = dateTimeArray[1].Split(":");
-
-            DateTime date = new DateTime(
-                int.Parse(dateArray[2]),
-                int.Parse(dateArray[1]),
-                int.Parse(dateArray[0]),
-                int.Parse(timeArray[0]),
-                int.Parse(timeArray[1]),
-                int.Parse(timeArray[2]));
 
             Date = Guard.AgainstInvalidDateTime(dateOfReading, "Date of reading is not a valid a data type"); 
             Guard.AgainstFalse(int.TryParse(meterValue, out reading), "Meter value is not a valid data type");
             reading = Guard.AgainstLessThan(0,int.Parse(meterValue), "Meter value is not a valid data type");
-            Guard.AgainstNotEqual(meterValue.ToString().Length,4, "Meter value must be an int of 4 digits");
+            Guard.AgainstNotEqual(meterValue.ToString().Length,5, "Meter value must be an int of 5 digits");
             Value = reading;
         }
 

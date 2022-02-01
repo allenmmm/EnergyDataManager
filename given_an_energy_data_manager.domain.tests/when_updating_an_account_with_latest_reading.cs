@@ -1,8 +1,6 @@
 ﻿using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.ValueObjects;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 using System.Linq;
 using FluentAssertions;
@@ -20,8 +18,8 @@ namespace given_an_energy_data_manager.domain.tests
             {
                  new Reading(
                     new MeterReading_VO(         
-                        "14/12/2019  09:23:59",
-                        "8080"))
+                        "14/12/2019 09:23:59",
+                        "78080"))
             };
             var sut = new Account(2);
 
@@ -44,43 +42,43 @@ namespace given_an_energy_data_manager.domain.tests
             {
                  new Reading(
                     new MeterReading_VO(
-                        "14/12/2019  09:23:59",
-                        "8080")),
+                        "14/12/2019 09:23:59",
+                        "78080")),
                  new Reading(
                     new MeterReading_VO(
-                        "14/12/2019  09:24:00",
-                        "8081")),
+                        "14/12/2019 09:24:00",
+                        "78081")),
                  new Reading(
                     new MeterReading_VO(
-                        "13/12/2019  09:23:59",
-                        "7999")) 
+                        "13/12/2019 09:23:59",
+                        "78079")) 
             };
 
             var latereading1EXP = new Reading(
                 new MeterReading_VO(
-                    "14/12/2019  09:24:00",  // OK 
-                    "8083"));
+                    "14/12/2019 09:24:00",  // OK 
+                    "78083"));
 
             var latereading2EXP = new Reading(
                 new MeterReading_VO(
-                "14/12/2019  09:24:00",  // OK
-                "8082"));
+                "14/12/2019 09:24:00",  // OK
+                "78082"));
 
             //Only the 2 element is later 
             List<Reading> newReadings = new List<Reading>()
             {
                  new Reading(
                     new MeterReading_VO(          //NO - TOO EARLY
-                        "14/12/2019  09:23:59",
-                        "8080")),
+                        "14/12/2019 09:23:59",
+                        "78080")),
                  new Reading(
                     new MeterReading_VO(           //NO  READING IS LESS
-                        "14/12/2019  09:24:00",
-                        "8080")),
+                        "14/12/2019 09:24:00",
+                        "78080")),
                  new Reading(
                     new MeterReading_VO(
-                        "14/12/2019  09:24:00",  //NO READING IS THE SAME 
-                        "8081")),
+                        "14/12/2019 09:24:00",  //NO READING IS THE SAME 
+                        "78081")),
                  latereading1EXP,
                  latereading2EXP
             };

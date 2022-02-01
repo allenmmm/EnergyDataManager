@@ -1,0 +1,7 @@
+﻿{
+	"ConnectionStrings": {
+		"EDM_DB": "Server=(localdb)\\mssqllocaldb;Database=EDM_Integ;Trusted_Connection=True;"
+	},
+	"AccountsFilePath": "TestData\\Test_Accounts.csv",
+	"MeterReadingsFilePath": "TestData\\Meter_Reading.csv"
+}

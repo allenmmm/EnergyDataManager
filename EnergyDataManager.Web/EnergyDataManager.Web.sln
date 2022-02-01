@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{2B4714BC-EB1E-4293-9B6A-8AF00C62E1CA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyDataReader.File", "..\EnergyeDataReader\EnergyDataReader.File.csproj", "{8E687A5E-118B-461E-B896-3EE4A865F4E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnergyDataReader.SourceMeterReading.File", "..\EnergyeDataReader\EnergyDataReader.SourceMeterReading.File.csproj", "{8E687A5E-118B-461E-B896-3EE4A865F4E5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9B268053-2B32-4D42-8795-ACA76ED915FC}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyDataManager.Data", "..\EnergyDataManager.Data\EnergyDataManager.Data.csproj", "{870A1124-4B51-4D30-A60B-802961BD0152}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "given_an_energy_data_manager.data.tests", "..\given_an_energy_data_manager.data.tests\given_an_energy_data_manager.data.tests.csproj", "{E51E1346-6135-4F0D-8FA8-762C9995D780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyDataReader.Account.File", "..\EnergyDataRead.Account.File\EnergyDataReader.Account.File.csproj", "{18F820DB-88AD-4119-9DAE-0A059503A5F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{E51E1346-6135-4F0D-8FA8-762C9995D780}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E51E1346-6135-4F0D-8FA8-762C9995D780}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E51E1346-6135-4F0D-8FA8-762C9995D780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18F820DB-88AD-4119-9DAE-0A059503A5F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18F820DB-88AD-4119-9DAE-0A059503A5F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18F820DB-88AD-4119-9DAE-0A059503A5F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18F820DB-88AD-4119-9DAE-0A059503A5F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{5FC51C8D-DE2B-42C9-B3C0-C1CBC8CC37B2} = {9B268053-2B32-4D42-8795-ACA76ED915FC}
 		{870A1124-4B51-4D30-A60B-802961BD0152} = {0199F40C-24F7-4E93-A207-54CAA27DD4B8}
 		{E51E1346-6135-4F0D-8FA8-762C9995D780} = {9B268053-2B32-4D42-8795-ACA76ED915FC}
+		{18F820DB-88AD-4119-9DAE-0A059503A5F8} = {0199F40C-24F7-4E93-A207-54CAA27DD4B8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7E0817A-884B-4888-BD83-EC6F79A9D947}

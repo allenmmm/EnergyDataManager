@@ -1,13 +1,9 @@
 using EnergyDataManager.Domain;
 using EnergyDataManager.Domain.Interfaces;
-using EnergyDataManager.Domain.ValueObjects;
 using EnergyDataManager.Web.Controllers;
-using EnergyDataReader;
-
 using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.VisualStudio.Threading;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -16,10 +12,8 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using Xunit;
-using EnergyDataManager.SharedKernel;
 using EnergyDataManager.SharedKernel.Interfaces;
 using EnergyDataManager.SharedKernel.interfaces;
-using Moq.Protected;
 using SharedKernel.Interfaces;
 using EnergyDataReader.File;
 using EnergyDataReader.File.Interfaces;
@@ -42,16 +36,15 @@ namespace given_an_energy_data_manager.web.tests
                 fn.GetSection(It.IsAny<string>()))
                 .Returns(_ConfigurationSectionMOCK.Object);
 
-
             _SourceMeterReading = new List<SourceMeterReading>(){
                 new SourceMeterReading(
-                    "2344", "22/04/2019  09:24:00", "1002"),
+                    "2344", "22/04/2019 09:24:00", "1002"),
                 new SourceMeterReading(
-                    "2344","24/04/2019  09:26:00", "2002"),
+                    "2344","24/04/2019 09:26:00", "2002"),
                 new SourceMeterReading(
-                    "2355", "07/05/2019  09:24:00", "8888"),
+                    "2355", "07/05/2019 09:24:00", "8888"),
                 new SourceMeterReading(
-                    "1248","18/05/2019  09:24:00", "1111")
+                    "1248","18/05/2019 09:24:00", "1111")
              };
         }
 
@@ -85,8 +78,8 @@ namespace given_an_energy_data_manager.web.tests
             //ARRANGE
             var totalReadingsEXP = sourceMeterReadingsEXP.ElementAt(0).Count;
             Account accountACT = null;
-            Mock<IEnergyDataManagerRepo> edmRepoMOCK =
-                new Mock<IEnergyDataManagerRepo>();
+            Mock<IEDMRepo> edmRepoMOCK =
+                new Mock<IEDMRepo>();
 
             Mock<IConverterList<Account, SourceMeterReading>> sourceMeterReadingsToAccountConverterMOCK =
                 new Mock<IConverterList<Account, SourceMeterReading>>();
@@ -123,7 +116,6 @@ namespace given_an_energy_data_manager.web.tests
                edmRepoMOCK.Object,
                 meterReadingFileMOCK.Object);
 
-
             //ACT
             var responseACT = sut.MeterReadingAsync().Result;
 
@@ -138,7 +130,6 @@ namespace given_an_energy_data_manager.web.tests
 
             edmRepoMOCK.Verify(fn => fn.UpdateAccountWithMeterReadingsAsync(
                 It.IsAny<Account>()), Times.Once);
-
 
             var responseObject = responseACT as ObjectResult;
             responseObject.StatusCode.Should().Be((int)HttpStatusCode.Created);
@@ -236,7 +227,7 @@ namespace given_an_energy_data_manager.web.tests
             //ARRAGE
             var inputLine = "2344,22/04/2019 09:24,1002";
             var inputLineEXP = inputLine.Split(',');
-            var sut = new MeterReadingConverter();
+            var sut = new MeterReadingFileConverter();
 
             //ACT
             var meterReadingACT = sut.Convert(inputLine);
@@ -251,14 +242,14 @@ namespace given_an_energy_data_manager.web.tests
         public void then_convert_source_meter_reading_into_account()
         {
             //ARRANGE
-            var readingEXP = 1002;
+            var readingEXP = 11002;
             var sourceMeterReading = new List<SourceMeterReading>(){
                 new SourceMeterReading(
-                    "2344", "22/04/2019  09:24:00", readingEXP.ToString())
+                    "2344", "22/04/2019 09:24:00", readingEXP.ToString())
             };
             var dateTimeEXP = new DateTime(2019, 04, 22, 9, 24, 0);
 
-            var sut = new AccountConverter();
+            var sut = new Account_SourceMeterReading_Converter();
 
             //ACT
             var accountACT = sut.Convert(sourceMeterReading);
@@ -275,14 +266,13 @@ namespace given_an_energy_data_manager.web.tests
         
         }
 
-
         [Theory]
         [InlineData("2344,22/04/2019 09:24")]
         [InlineData(null)]
         public void then_raise_exception_when_source_meter_reading_invalid(string souceMeterReadingEXP)
         {
             //ARRANGE
-            var sut = new MeterReadingConverter();
+            var sut = new MeterReadingFileConverter();
 
             //ACT
             Action act = () => sut.Convert(souceMeterReadingEXP);

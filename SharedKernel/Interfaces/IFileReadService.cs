@@ -1,8 +1,5 @@
 ﻿using EnergyDataManager.SharedKernel.interfaces;
-using EnergyDataManager.SharedKernel.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace SharedKernel.Interfaces
 {

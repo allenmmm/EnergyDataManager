@@ -1,9 +1,6 @@
 ﻿using EnergyDataManager.Domain.ValueObjects;
 using SharedKernel;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Text;
 
 namespace EnergyDataManager.Domain
 {

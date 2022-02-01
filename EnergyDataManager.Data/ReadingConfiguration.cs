@@ -17,7 +17,8 @@ namespace EnergyDataManager.Data
 
                     p.Property(mr => mr.Value)
                         .IsRequired()
-                        .HasMaxLength(4);
+                        .HasMaxLength(5)
+                        .IsFixedLength();
                 });
             modelBuilder.Navigation(mr => mr.MeterReading).IsRequired();
             modelBuilder.Property(i => i.AccountId).IsRequired();

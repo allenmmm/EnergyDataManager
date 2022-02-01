@@ -1,15 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using EnergyDataManager.Data;
+using EnergyDataManager.Domain.Interfaces;
+using EnergyDataManager.SharedKernel.interfaces;
+using EnergyDataManager.SharedKernel.Interfaces;
+using EnergyDataManager.Web.DomainServices;
+using EnergyDataManager.Web.Filters;
+using EnergyDataReader.Account.File;
+using EnergyDataReader.File;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+using SharedKernel;
+using SharedKernel.Interfaces;
 
 namespace EnergyDataManager.Web
 {
@@ -25,7 +28,28 @@ namespace EnergyDataManager.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddScoped<IEDMRepo, EDMRepo>();
+            services.AddDbContext<EDMContext>();
+            services.AddScoped<MeterReadingFile,MeterReadingFile>();
+            services.AddScoped<IFileReadService<SourceMeterReading, string>, 
+                FileReadService<SourceMeterReading>>();
+            services.AddSingleton<
+                IConverterList<Domain.Account, SourceMeterReading>,
+                Account_SourceMeterReading_Converter>();
+            services.AddSingleton<
+                IConverter<SourceMeterReading, string>,
+                MeterReadingFileConverter>();
+            services.AddSingleton<
+                IConverter<EnergyDataReader.Account.File.Account, string>,
+                AccountFileConverter>();
+
+            services.AddControllers(
+                 options => options.Filters.Add(
+                     new ExceptionFilter())).AddJsonOptions(options =>
+                     {
+                         options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                         options.JsonSerializerOptions.IgnoreNullValues = true;
+                     }); ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

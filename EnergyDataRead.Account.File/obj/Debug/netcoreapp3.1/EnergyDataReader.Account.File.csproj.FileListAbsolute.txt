@@ -1,0 +1,12 @@
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\bin\Debug\netcoreapp3.1\EnergyDataReader.Account.File.deps.json
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\bin\Debug\netcoreapp3.1\EnergyDataReader.Account.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\bin\Debug\netcoreapp3.1\EnergyDataReader.Account.File.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\bin\Debug\netcoreapp3.1\SharedKernel.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\bin\Debug\netcoreapp3.1\SharedKernel.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.csprojAssemblyReference.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.AssemblyInfoInputs.cache
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.AssemblyInfo.cs
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.csproj.CopyComplete
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.dll
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.pdb
+D:\Opportunities\Restore\EnergyDataManager\EnergyDataRead.Account.File\obj\Debug\netcoreapp3.1\EnergyDataReader.Account.File.csproj.CoreCompileInputs.cache

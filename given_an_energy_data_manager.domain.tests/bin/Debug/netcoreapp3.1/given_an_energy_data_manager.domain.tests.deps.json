@@ -9,7 +9,7 @@
       "given_an_energy_data_manager.domain.tests/1.0.0": {
         "dependencies": {
           "EnergyDataManager.Domain": "1.0.0",
-          "EnergyDataReader.File": "1.0.0",
+          "EnergyDataReader.SourceMeterReading.File": "1.0.0",
           "FluentAssertions": "6.4.0",
           "Microsoft.NET.Test.Sdk": "16.9.4",
           "coverlet.collector": "3.0.2",
@@ -1163,19 +1163,29 @@
       "xunit.runner.visualstudio/2.4.3": {},
       "EnergyDataManager.Domain/1.0.0": {
         "dependencies": {
-          "EnergyDataReader.File": "1.0.0"
+          "EnergyDataReader.Account.File": "1.0.0",
+          "EnergyDataReader.SourceMeterReading.File": "1.0.0"
         },
         "runtime": {
           "EnergyDataManager.Domain.dll": {}
         }
       },
-      "EnergyDataReader.File/1.0.0": {
+      "EnergyDataReader.Account.File/1.0.0": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
           "SharedKernel": "1.0.0"
         },
         "runtime": {
-          "EnergyDataReader.File.dll": {}
+          "EnergyDataReader.Account.File.dll": {}
+        }
+      },
+      "EnergyDataReader.SourceMeterReading.File/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "SharedKernel": "1.0.0"
+        },
+        "runtime": {
+          "EnergyDataReader.SourceMeterReading.File.dll": {}
         }
       },
       "SharedKernel/1.0.0": {
@@ -1882,7 +1892,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "EnergyDataReader.File/1.0.0": {
+    "EnergyDataReader.Account.File/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EnergyDataReader.SourceMeterReading.File/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

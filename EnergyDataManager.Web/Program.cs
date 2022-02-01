@@ -1,11 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using EnergyDataManager.Web.DomainServices;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+
 
 namespace EnergyDataManager.Web
 {
@@ -13,7 +9,11 @@ namespace EnergyDataManager.Web
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args)
+                .Build()
+                .MigrateDatabase()
+                .SeedData()
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

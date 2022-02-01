@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace EnergyDataReader.File
+﻿namespace EnergyDataReader.File
 {
     public class SourceMeterReading
     {
@@ -27,6 +23,5 @@ namespace EnergyDataReader.File
             MeterReadingDateTime = sourceMeterReading.MeterReadingDateTime;
             MeterReadValue = sourceMeterReading.MeterReadValue;
         }
-
     }
 }
